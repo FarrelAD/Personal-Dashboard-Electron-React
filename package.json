@@ -45,6 +45,7 @@
     "electron-squirrel-startup": "^1.0.1",
     "react": "^18.3.0-canary-1dba980e1f-20241220",
     "react-dom": "^18.3.0-canary-1dba980e1f-20241220",
+    "react-router-dom": "^7.6.1",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.8",
     "tw-animate-css": "^1.3.2"
