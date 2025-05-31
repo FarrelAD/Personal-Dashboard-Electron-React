@@ -89,7 +89,7 @@ function Dashboard() {
           {appsList.map((val, index) => (
             <Card
               key={index}
-              className="flex! flex-col! justify-between justify-self-center hover:cursor-pointer h-40 w-32 lg:h-fit lg:w-24"
+              className="flex! flex-col! justify-between justify-self-center hover:cursor-pointer h-40 w-32 lg:h-fit lg:w-24 hover:bg-gray-200!"
             >
               <div className="w-full h-full">
                 <img

@@ -8,7 +8,7 @@ function DailyTasks() {
 
             <div className="h-40 overflow-y-auto">
                 {UserTasks.map((task, index) => (
-                    <Card key={index} className="bg-inherit! hover:cursor-pointer">
+                    <Card key={index} className="bg-inherit! hover:cursor-pointer hover:bg-amber-200!">
                         <Text as="p">{task.startTime}</Text>
                         <Text as="h5" weight="semibold">{task.title}</Text>
                     </Card>
