@@ -1,6 +1,6 @@
 import SocMedInterface from '../Interface/SocMedInterface';
 
-const socialMediaList: SocMedInterface[] =  [
+export default [
     {
         'name': 'Instagram',
         'logoPath': () => import('../../assets/logo-instagram.png'),
@@ -46,6 +46,4 @@ const socialMediaList: SocMedInterface[] =  [
         'logoPath': () => import('../../assets/logo-huggingface.png'),
         'url': 'https://huggingface.co/'
     }
-];
-
-export default socialMediaList;
+] as SocMedInterface[];
