@@ -3,6 +3,7 @@ import DragRegion from "../Components/DragRegion";
 import YourTasks from "../Components/Dashboard/YourTasks";
 import YourProductivityApps from "../Components/Dashboard/YourProductivityApps";
 import YourProjects from "../Components/Dashboard/YourProjects";
+import { getCurrentDate } from "../Utils/DateAndTimeHelper";
 
 function Dashboard() {
   const [time, setTime] = useState(new Date());
@@ -45,13 +46,6 @@ function Dashboard() {
     };
   }, []);
 
-
-  const now = new Date();
-  const date = now.getDate();
-  const month = now.toLocaleString("en-US", { month: "long" });
-  const year = now.getFullYear();
-  const currentDate = `${date} ${month} ${year}`;
-
   return (
     <div className="bg-white w-full min-h-screen text-black px-24 py-16 flex flex-col gap-9 select-none">
       <DragRegion />
@@ -59,7 +53,7 @@ function Dashboard() {
       <div className="flex justify-between items-center">
         <h1 className="py-4 text-4xl font-bold">{greeting}, User!</h1>
         <div className="text-right">
-          <p className="font-semibold">{currentDate}</p>
+          <p className="font-semibold">{getCurrentDate()}</p>
           <p className="text-2xl">{time.toLocaleTimeString()}</p>
         </div>
       </div>
