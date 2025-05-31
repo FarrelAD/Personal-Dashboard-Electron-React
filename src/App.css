@@ -121,3 +121,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.app-region-drag {
+  -webkit-app-region: drag;
+}
